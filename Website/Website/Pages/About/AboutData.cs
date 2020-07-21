@@ -7,16 +7,9 @@ namespace Website.Pages.About
 {
     public class AboutData
     {
-
-        protected string Title {get;set;}
-        protected string Lead {get;set;}
-
-        protected string Body {get;set;}
-
-        protected string LearnMore {get;set;}
-        protected string LearnLink {get;set;}
-
-
-
+        public string Title {get;set;}
+        public string Lead {get;set;}
+        public string Body {get;set;}
+        public LearnMoreData LearnMoreData { get;set;}
     }
 }

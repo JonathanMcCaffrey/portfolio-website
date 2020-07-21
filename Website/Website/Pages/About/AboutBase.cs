@@ -1,15 +1,19 @@
 ﻿using System;
-using Microsoft.JSInterop;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.JSInterop;
 using Microsoft.AspNetCore.Components;
+
 
 namespace Website.Pages.About
 {
     public class AboutBase : ComponentBase
     {
 
-        protected AboutData AboutData {get; set;}
+
+        protected AboutData About {get; set;}
+
 
 
         [Inject]
@@ -21,13 +25,11 @@ namespace Website.Pages.About
 
         protected override async Task OnInitializedAsync()
         {
-
-
-
-
-            AboutData = Http.GetJsonAsync<AboutData>(await Http.GetStringAsync($"content/about/json/data.json"));
-
+            About = await Http.GetJsonAsync<AboutData>("json/about/data.json" );
         }
 
     }
 }
+
+
+//Cannot implicitly convert type 'System.Threading.Tasks.Task<System.Collections.Generic>' to 'System.Collections.Generic.List<>'

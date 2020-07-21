@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using BlazorStrap;
+using BlazorStyled;
 
 
 namespace Website
@@ -16,6 +17,9 @@ namespace Website
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+             builder.Services.AddBlazorStyled();
+
 
             builder.Services.AddBootstrapCss();
 

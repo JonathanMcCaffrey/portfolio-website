@@ -1,0 +1,31 @@
+﻿
+:root {
+    --spacer: 620px;
+    --bgc-background: #333;
+    --bgc-content: #444;
+    --bgc-sidenav: #353535;
+    --bgc-sidenav2: #313131;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+html {
+    background-color: var(--bgc-background);
+    color: #FFF;
+}
+
+
+.main {
+    background-color: var(--bgc-content);
+}
+
+.sidebar {
+    background-color: var(--bgc-sidenav);
+    background-image: linear-gradient(180deg, var(--bgc-sidenav) 0%, var(--bgc-sidenav2) 70%);
+}

@@ -1,0 +1,33 @@
+﻿@inject IBootstrapCss BootstrapCSS
+@using BlazorStrap.Extensions
+@using BlazorStrap.Util
+@using BlazorStrap.Util.Components
+
+<select @onchange="SelectedChanged" >
+    @foreach (string theme in themes)
+    {
+
+        <option value = "@theme"> @theme </option>
+    }
+</select>
+
+
+@code {
+    private List<string> themes;
+    private string Selected { get; set; }
+
+    private async void SelectedChanged(ChangeEventArgs target)
+    {
+        Selected = target.Value.ToString();
+        await BootstrapCSS.SetBootstrapCss(target.Value.ToString(), "4.3.1");
+    }
+
+    protected override void OnInitialized()
+    {
+
+        base.OnInitialized();
+
+        themes = Enum.GetNames(typeof(Theme)).ToList();
+        Selected = BootstrapCSS.CurrentTheme.ToString();
+    }
+}

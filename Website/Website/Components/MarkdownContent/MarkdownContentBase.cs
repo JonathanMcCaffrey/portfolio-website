@@ -7,10 +7,8 @@ namespace Website.Components.MarkdownContent
 {
     public class MarkdownContentBase : ComponentBase
     {
-
         [Inject]
         protected HttpClient Http { get; set; }
-
 
         [Parameter]
         public string MarkdownFileName { get; set; }
@@ -20,11 +18,7 @@ namespace Website.Components.MarkdownContent
         protected override async Task OnInitializedAsync()
         {
             Markdown = Markdig.Markdown.ToHtml(await Http.GetStringAsync($"markdown/{MarkdownFileName}.md"));
-
         }
 
-        public MarkdownContentBase()
-        {
-        }
     }
 }

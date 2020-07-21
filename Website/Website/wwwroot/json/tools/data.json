@@ -1,0 +1,34 @@
+
+{
+  "tools" : [
+    { 
+      "name" : "POEHideoutGround", 
+      "blurb" : "3rd party open-sourced tool for generating hideout ground in a popular video game.",
+      "href" : "http://poehideoutground.com",
+      "markdownfile" : "poehideoutground",
+      "image" : "poehideoutground"
+      
+    },{ 
+      "name" : "POEHideoutGround", 
+      "blurb" : "3rd party open-sourced tool for generating hideout ground in a popular video game.",
+      "href" : "http://poehideoutground.com",
+      "markdownfile" : "poehideoutground",
+      "image" : "poehideoutground"
+      
+    },{ 
+      "name" : "POEHideoutGround", 
+      "blurb" : "3rd party open-sourced tool for generating hideout ground in a popular video game.",
+      "href" : "http://poehideoutground.com",
+      "markdownfile" : "poehideoutground",
+      "image" : "poehideoutground"
+      
+    },{ 
+      "name" : "POEHideoutGround", 
+      "blurb" : "3rd party open-sourced tool for generating hideout ground in a popular video game.",
+      "href" : "http://poehideoutground.com",
+      "markdownfile" : "poehideoutground",
+      "image" : "poehideoutground"
+      
+    }
+  ]
+}

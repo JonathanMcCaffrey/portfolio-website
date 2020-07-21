@@ -1,17 +1,20 @@
 ﻿@page "/about"
+@inherits AboutBase
 
-@if(AboutData == null) {
-<div>
-    Loading...
-</div>
+@if (About == null)
+{
+    <div>
+        Loading...
+    </div>
 }
-else {
-<BSJumbotron>
-    <h1 class="display-4">@AboutData.Title</h1>
-    <p class="lead">@AboutData.Lead</p>
-    <hr class="my-4" />
-    <p>@AboutData.Body</p>
-    <BSButton Href="@AboutData.Link" Color=Color.Primary Size=Size.Large>@AboutData.LearnMore</BSButton>
-</BSJumbotron>
+else
+{
+    <BSJumbotron>
+        <h1 class="display-4">@About.Title</h1>
+        <p class="lead">@About.Lead</p>
+        <hr class="my-4" />
+        <p>@About.Body</p>
+        <BSButton ButtonType="ButtonType.Link" Href=@About.LearnMoreData.Href Color=Color.Primary Size=Size.Large>@About.LearnMoreData.Text</BSButton>
+    </BSJumbotron>
 }
 
