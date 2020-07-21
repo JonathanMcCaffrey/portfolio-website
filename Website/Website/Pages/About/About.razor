@@ -1,0 +1,17 @@
+﻿@page "/about"
+
+@if(AboutData == null) {
+<div>
+    Loading...
+</div>
+}
+else {
+<BSJumbotron>
+    <h1 class="display-4">@AboutData.Title</h1>
+    <p class="lead">@AboutData.Lead</p>
+    <hr class="my-4" />
+    <p>@AboutData.Body</p>
+    <BSButton Href="@AboutData.Link" Color=Color.Primary Size=Size.Large>@AboutData.LearnMore</BSButton>
+</BSJumbotron>
+}
+
