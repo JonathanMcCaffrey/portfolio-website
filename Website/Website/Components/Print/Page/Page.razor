@@ -1,0 +1,16 @@
+﻿@inherits ComponentBase
+
+<section class="sheet">
+    <article>
+        <div style="margin: 30px">
+            @ChildContent
+        </div>
+    </article>
+</section>
+
+
+@code
+{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

@@ -1,67 +1,17 @@
 ﻿@inherits LayoutComponentBase
 @inject IStyled Styled
 
-<Styled @bind-Classname="@theme">
-    color: [colors.primary];
-</Styled>
 
-      <button type="button" class=@((string)(ToggleTheme ? $"btn btn-light" : "btn btn-dark"))>
-          @((string)(ToggleTheme ? $"Light" : "Dark"))
-      </button>
-
-
-<div style="display:grid;width:100vw;grid-template-rows: 36px auto" >
-    <Website.Shared.NavBar.NavBar   />
+<div style="display:grid;width:100vw;grid-template-rows: 36px auto">
+    <Website.Shared.NavBar.NavBar />
     <div class="main">
         <div class="content px-4">
             @Body
-        </div>  
+        </div>
     </div>
 </div>
 
 @code {
- private string theme {get;set;}
-
-  protected bool ToggleTheme {get;set;}
-
-
-protected override void OnInitialized()
-    {
-            Styled.SetThemeValue("colors.primary", "#FFF");
-            Styled.SetThemeValue("bgc.background", "#333");
-            Styled.SetThemeValue("bgc.main", "#444");
-            Styled.SetThemeValue("bgc.navbar", "#353535");
-
-
-                    Console.WriteLine(
-            "This was called OnInitialized"
-        );
-
-
-    }
-
-    protected void OnToggleThemeChanged(MouseEventArgs mouseEvent)
-    {       
-        ToggleTheme = !ToggleTheme;
-
-        Console.WriteLine(
-            "This was called OnToggleThemeChanged"
-        );
-
-
-        if(ToggleTheme) {
-            Styled.SetThemeValue("colors.primary", "#FFF");
-            Styled.SetThemeValue("bgc.background", "#333");
-            Styled.SetThemeValue("bgc.main", "#444");
-            Styled.SetThemeValue("bgc.navbar", "#353535");
-        } else {
-            Styled.SetThemeValue("colors.primary", "#000");
-            Styled.SetThemeValue("bgc.background", "#EEE");
-            Styled.SetThemeValue("bgc.main", "#FAFAFA");
-            Styled.SetThemeValue("bgc.navbar", "#DFDFDF");
-        }
-
-    }
-
+    private string theme { get; set; }
 
 }
