@@ -1,0 +1,12 @@
+﻿@inherits ComponentBase
+
+<div style="padding: 8px">
+    @ChildContent
+</div>
+
+
+@code
+{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
