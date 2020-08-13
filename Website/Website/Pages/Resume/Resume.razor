@@ -1,34 +1,40 @@
 ﻿@page "/resume"
 @layout EmptyLayout
 
+@if(ResumeData == null) 
+{
+    <div>Loading...</div>
+} else {
 
 <Website.Components.Print.Print>
     <Website.Components.Print.Page.Page>
         <div style="display: grid; grid-template-columns: 1.65fr 5fr;grid-gap:12px;">
-
             <div style="background-color:#F9F9F9; padding: 2px">
                 <Website.Pages.Resume.Block>
                     <Website.Pages.Resume.TitleName>
-                        Jonathan McCaffrey
+                        @ResumeData.Title.Name
                     </Website.Pages.Resume.TitleName>
-
                     <Website.Pages.Resume.Title>
-                        Software Developer
+                        @ResumeData.Title.Profession
                     </Website.Pages.Resume.Title>
                 </Website.Pages.Resume.Block>
                 <Website.Pages.Resume.Section>
                     <Website.Pages.Resume.SectionTitle>
                         Personal Info
                     </Website.Pages.Resume.SectionTitle>
-                    <Website.Pages.Resume.Block>
-                        <Website.Pages.Resume.Bold>
-                            Address
-                        </Website.Pages.Resume.Bold>
-                        <Website.Pages.Resume.Text>
-                            2045 Carling
-                        </Website.Pages.Resume.Text>
-                    </Website.Pages.Resume.Block>
 
+                    @foreach (var personInfo in ResumeData.PersonalInfo)
+                    {
+                        <Website.Pages.Resume.Block>
+                            <Website.Pages.Resume.Bold>
+                                @personInfo.Name
+                            </Website.Pages.Resume.Bold>
+                            <Website.Pages.Resume.Text>
+                                @personInfo.Value
+                            </Website.Pages.Resume.Text>
+                        </Website.Pages.Resume.Block>
+                    }
+                   
                 </Website.Pages.Resume.Section>
 
             </div>
@@ -41,8 +47,43 @@
 
                     <Website.Pages.Resume.Block>
 
-                        In the industry since 2012, while playing a pivotal role in all aspects of our software stack while developing native iOS and Android applications. Worked on several projects from design to release, and improved products with features and patches based on customer feedback and data. Moved on to maintaining client APIs, test automation, tooling, and customer success, on cloud-based technology. Currently working in the web development space with React.js.
+                        @ResumeData.Summary
+                    </Website.Pages.Resume.Block>
+                </Website.Pages.Resume.Section>
+
+
+                 <Website.Pages.Resume.Section>
+                    <Website.Pages.Resume.SectionTitle>
+                        Summary
+                    </Website.Pages.Resume.SectionTitle>
+
+                     @foreach (var experience in @ResumeData.Experience)
+                     {
+                        <Website.Pages.Resume.Block>
+                            @experience.Date
+                            @experience.Location
+                            @experience.Role
+                            <ul>
+                                @foreach (var point in experience.Points)
+                                {
+                                    <li>@point</li>
+                                }
+                            </ul>
                         </Website.Pages.Resume.Block>
+                     }
+                </Website.Pages.Resume.Section>
+
+                <Website.Pages.Resume.Section>
+                    <Website.Pages.Resume.SectionTitle>
+                        Education
+                    </Website.Pages.Resume.SectionTitle>
+
+                     @foreach (var education in @ResumeData.Education)
+                     {
+                        <Website.Pages.Resume.Block>
+                            @education
+                        </Website.Pages.Resume.Block>
+                     }
                 </Website.Pages.Resume.Section>
                 
             </div>
@@ -59,3 +100,4 @@
         </div>
     </Website.Components.Print.Page.Page>
 </Website.Components.Print.Print>
+}
