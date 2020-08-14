@@ -10,8 +10,8 @@ else
 
     <Website.Components.Print.Print>
         <Website.Components.Print.Page.Page>
-            <div style="display: grid; grid-template-columns: 1.65fr 5fr;grid-gap:12px;">
-                <div style="background-color:#F9F9F9; padding: 2px">
+            <div style="display: grid; grid-template-columns: 27% 73%;grid-gap:12px;">
+                <div style="background-color:#F9F9F9; padding: 2px; word-wrap: break-word;">
                     <Website.Pages.Resume.Block>
                         <Website.Pages.Resume.TitleName>
                             @ResumeData.Title.Name
@@ -39,6 +39,25 @@ else
 
                     </Website.Pages.Resume.Section>
 
+
+
+                    <Website.Pages.Resume.Section>
+                      
+                      <Website.Pages.Resume.SectionTitle>
+                        Skills 
+                      </Website.Pages.Resume.SectionTitle>
+
+                        <Website.Pages.Resume.Block>
+                        <div style="display:grid; grid-template-colums:1frl">
+                      @foreach (var skill in ResumeData.Skills)
+                      {
+                        <Website.Pages.Resume.Bold>
+                          @skill
+                        </Website.Pages.Resume.Bold>
+                      }
+                        </div>
+                        </Website.Pages.Resume.Block>
+                    </Website.Pages.Resume.Section>
                 </div>
 
                 <div>
@@ -62,7 +81,7 @@ else
                         @foreach (var experience in @ResumeData.Experience)
                         {
                             <Website.Pages.Resume.Block>
-                                <div style="display:grid;grid-template-columns:1fr 6fr;">
+                                <div style="display:grid;grid-template-columns:10% 90%;grid-gap:2px;">
 
                                     <div>@experience.Date</div>
                                     <div>
@@ -117,25 +136,33 @@ else
                     Projects
                 </Website.Pages.Resume.SectionTitle>
 
+                <div style="display:grid;grid-template-columns: auto auto; grid-gap:10px;"> 
                 @foreach (var project in @ResumeData.Projects)
-                {
+               {
+                 @if(@ResumeData.Tags?.includes("hidden") == false)
+                 {
                     <Website.Pages.Resume.Block>
-                        <div>
+                        <div style="display:grid;grid-template-columns:15% 85%;">
                             <div>
                                 @project.Date
                             </div>
                             <div>
                                 <Website.Pages.Resume.Text>
-                                    @project.Name
-                                </Website.Pages.Resume.Text>
-                                <Website.Pages.Resume.Text>
-                                    @project.Description
+                                    @project.Name, @project.Description
                                 </Website.Pages.Resume.Text>
                             </div>
                         </div>
-                    </Website.Pages.Resume.Block>
-                }
 
+                        <Website.Pages.Resume.Text>
+                            Roles: @project.Roles
+                       </Website.Pages.Resume.Text>
+                       <Website.Pages.Resume.Text>
+                            Technology: @project.Technology
+                       </Website.Pages.Resume.Text>
+                    </Website.Pages.Resume.Block>
+                 }
+                }
+            </div>
             </Website.Pages.Resume.Section>
         </Website.Components.Print.Page.Page>
     </Website.Components.Print.Print>

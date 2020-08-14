@@ -18,24 +18,24 @@
     },
     {
       "name": "WWW",
-      "value": "https://jonathanmc.dev/"
+      "value": "jonathanmc.dev"
     },
     {
       "name": "LinkedIn",
-      "value": "https://www.linkedin.com/in/jonmcc/"
+      "value": "jonmcc"
     },
 
     {
       "name": "GitHub",
-      "value": "https://github.com/JonathanMcCaffrey"
+      "value": "JonathanMcCaffrey"
     },
     {
       "name": "Facebook",
-      "value": "https://www.facebook.com/jonathan.mccaffrey.50"
+      "value": "jonathan.mccaffrey.50"
     },
     {
       "name": "Twitch",
-      "value": "https://www.twitch.tv/jonathan_mcc"
+      "value": "jonathan_mcc"
     }
   ],
   "Skills": [
@@ -56,7 +56,7 @@
   "Summary": "In industry since 2012, while playing a pivotal role in all aspects of the software stack, from prototype to release, and improving applications with patches based on customer feedback and data in production.",
   "Experience": [
     {
-      "date": "2015-2020",
+      "date": "2015 - 2020",
       "location": "bitHeads, Tech shop with a focus on cloud-based technology",
       "role": "Full Stack Developer",
       "points": [
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "date": "2012-2015",
+      "date": "2012 - 2015",
       "location": "Smoke Labs, Tech startup with a focus on mobile games",
       "role": "Mobile Game Developer",
       "points": [
@@ -101,13 +101,6 @@
       "description": "Web portal for buying and managing humidifiers.",
       "roles": "Test Automation Engineer. CI Engineer.",
       "technology": "Java, Selenium, Jenkins, Groovy, bitBucket, starTeam, Jira."
-    },
-    {
-      "date": "2016 - 2020",
-      "name": "brainCloud",
-      "description": "Backend for games, apps and things.",
-      "roles": "Test Automation Engineer. Customer Success Specialist. Full-stack Developer.",
-      "technology": "C++, C#, Ruby, Java, JavaScript, Selenium, XUnit, ObjC, Swift, Unreal, Unity, Intercom, Jenkins, WordPress."
     },
     {
       "date": "2015",
@@ -156,7 +149,8 @@
       "name": "Arty’s Quest for Nuts",
       "description": "Original iOS side scroller title.",
       "roles": "Game Developer. Level Designer.",
-      "technology": "ObjC, C++, Cocos2d-x, Jira, Git."
+      "technology": "ObjC, C++, Cocos2d-x, Jira, Git.",
+      "tags" : ["hidden"]
     },
     {
       "date": "2012",
