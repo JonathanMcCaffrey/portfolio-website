@@ -1,103 +1,142 @@
 ﻿@page "/resume"
 @layout EmptyLayout
 
-@if(ResumeData == null) 
+@if (ResumeData == null)
 {
     <div>Loading...</div>
-} else {
+}
+else
+{
 
-<Website.Components.Print.Print>
-    <Website.Components.Print.Page.Page>
-        <div style="display: grid; grid-template-columns: 1.65fr 5fr;grid-gap:12px;">
-            <div style="background-color:#F9F9F9; padding: 2px">
-                <Website.Pages.Resume.Block>
-                    <Website.Pages.Resume.TitleName>
-                        @ResumeData.Title.Name
-                    </Website.Pages.Resume.TitleName>
-                    <Website.Pages.Resume.Title>
-                        @ResumeData.Title.Profession
-                    </Website.Pages.Resume.Title>
-                </Website.Pages.Resume.Block>
-                <Website.Pages.Resume.Section>
-                    <Website.Pages.Resume.SectionTitle>
-                        Personal Info
-                    </Website.Pages.Resume.SectionTitle>
-
-                    @foreach (var personInfo in ResumeData.PersonalInfo)
-                    {
-                        <Website.Pages.Resume.Block>
-                            <Website.Pages.Resume.Bold>
-                                @personInfo.Name
-                            </Website.Pages.Resume.Bold>
-                            <Website.Pages.Resume.Text>
-                                @personInfo.Value
-                            </Website.Pages.Resume.Text>
-                        </Website.Pages.Resume.Block>
-                    }
-                   
-                </Website.Pages.Resume.Section>
-
-            </div>
-
-            <div>
-                <Website.Pages.Resume.Section>
-                    <Website.Pages.Resume.SectionTitle>
-                        Summary
-                    </Website.Pages.Resume.SectionTitle>
-
+    <Website.Components.Print.Print>
+        <Website.Components.Print.Page.Page>
+            <div style="display: grid; grid-template-columns: 1.65fr 5fr;grid-gap:12px;">
+                <div style="background-color:#F9F9F9; padding: 2px">
                     <Website.Pages.Resume.Block>
-
-                        @ResumeData.Summary
+                        <Website.Pages.Resume.TitleName>
+                            @ResumeData.Title.Name
+                        </Website.Pages.Resume.TitleName>
+                        <Website.Pages.Resume.Title>
+                            @ResumeData.Title.Profession
+                        </Website.Pages.Resume.Title>
                     </Website.Pages.Resume.Block>
-                </Website.Pages.Resume.Section>
+                    <Website.Pages.Resume.Section>
+                        <Website.Pages.Resume.SectionTitle>
+                            Personal Info
+                        </Website.Pages.Resume.SectionTitle>
 
+                        @foreach (var personInfo in ResumeData.PersonalInfo)
+                        {
+                            <Website.Pages.Resume.Block>
+                                <Website.Pages.Resume.Bold>
+                                    @personInfo.Name
+                                </Website.Pages.Resume.Bold>
+                                <Website.Pages.Resume.Text>
+                                    @personInfo.Value
+                                </Website.Pages.Resume.Text>
+                            </Website.Pages.Resume.Block>
+                        }
 
-                 <Website.Pages.Resume.Section>
-                    <Website.Pages.Resume.SectionTitle>
-                        Summary
-                    </Website.Pages.Resume.SectionTitle>
+                    </Website.Pages.Resume.Section>
 
-                     @foreach (var experience in @ResumeData.Experience)
-                     {
+                </div>
+
+                <div>
+                    <Website.Pages.Resume.Section>
+                        <Website.Pages.Resume.SectionTitle>
+                            Summary
+                        </Website.Pages.Resume.SectionTitle>
+
                         <Website.Pages.Resume.Block>
-                            @experience.Date
-                            @experience.Location
-                            @experience.Role
-                            <ul>
-                                @foreach (var point in experience.Points)
-                                {
-                                    <li>@point</li>
-                                }
-                            </ul>
+
+                            @ResumeData.Summary
                         </Website.Pages.Resume.Block>
-                     }
-                </Website.Pages.Resume.Section>
+                    </Website.Pages.Resume.Section>
 
-                <Website.Pages.Resume.Section>
-                    <Website.Pages.Resume.SectionTitle>
-                        Education
-                    </Website.Pages.Resume.SectionTitle>
 
-                     @foreach (var education in @ResumeData.Education)
-                     {
+                    <Website.Pages.Resume.Section>
+                        <Website.Pages.Resume.SectionTitle>
+                            Summary
+                        </Website.Pages.Resume.SectionTitle>
+
+                        @foreach (var experience in @ResumeData.Experience)
+                        {
+                            <Website.Pages.Resume.Block>
+                                <div style="display:grid;grid-template-columns:1fr 6fr;">
+
+                                    <div>@experience.Date</div>
+                                    <div>
+                                        <Website.Pages.Resume.Bold>
+                                            @experience.Role
+                                        </Website.Pages.Resume.Bold>
+                                        <Website.Pages.Resume.Text>
+                                            @experience.Location
+                                        </Website.Pages.Resume.Text>
+                                    </div>
+                                </div>
+                                <ul>
+                                    @foreach (var point in experience.Points)
+                                    {
+                                        <li>
+
+                                            <Website.Pages.Resume.Text>
+                                                @point
+
+                                            </Website.Pages.Resume.Text>
+                                        </li>
+                                    }
+                                </ul>
+                            </Website.Pages.Resume.Block>
+                        }
+                    </Website.Pages.Resume.Section>
+
+                    <Website.Pages.Resume.Section>
+                        <Website.Pages.Resume.SectionTitle>
+                            Education
+                        </Website.Pages.Resume.SectionTitle>
+
                         <Website.Pages.Resume.Block>
-                            @education
+                            @foreach (var education in @ResumeData.Education)
+                            {
+                                <Website.Pages.Resume.Text>
+                                    @education
+                                </Website.Pages.Resume.Text>
+                            }
                         </Website.Pages.Resume.Block>
-                     }
-                </Website.Pages.Resume.Section>
-                
+                    </Website.Pages.Resume.Section>
+
+                </div>
             </div>
-        </div>
-    </Website.Components.Print.Page.Page>
+        </Website.Components.Print.Page.Page>
 
-    <Website.Components.Print.Page.Page>
-        <div>
-            <Website.Pages.Resume.Title>
-                Jonathan McCaffrey
-            </Website.Pages.Resume.Title>
+        <Website.Components.Print.Page.Page>
 
+            <Website.Pages.Resume.Section>
 
-        </div>
-    </Website.Components.Print.Page.Page>
-</Website.Components.Print.Print>
+                <Website.Pages.Resume.SectionTitle>
+                    Projects
+                </Website.Pages.Resume.SectionTitle>
+
+                @foreach (var project in @ResumeData.Projects)
+                {
+                    <Website.Pages.Resume.Block>
+                        <div>
+                            <div>
+                                @project.Date
+                            </div>
+                            <div>
+                                <Website.Pages.Resume.Text>
+                                    @project.Name
+                                </Website.Pages.Resume.Text>
+                                <Website.Pages.Resume.Text>
+                                    @project.Description
+                                </Website.Pages.Resume.Text>
+                            </div>
+                        </div>
+                    </Website.Pages.Resume.Block>
+                }
+
+            </Website.Pages.Resume.Section>
+        </Website.Components.Print.Page.Page>
+    </Website.Components.Print.Print>
 }
