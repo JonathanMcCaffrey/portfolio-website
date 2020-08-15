@@ -10,5 +10,6 @@ namespace Website.Data.Resume {
     public string Summary {get; set;}
     public List<string> Education {get; set;}
     public List<Project> Projects {get; set;}
+    public List<SideProjects> SideProjects {get; set;} 
   }
 }

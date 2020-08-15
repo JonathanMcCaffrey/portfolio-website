@@ -31,11 +31,13 @@
     },
     {
       "name": "Facebook",
-      "value": "jonathan.mccaffrey.50"
+      "value": "jonathan.mccaffrey.50",
+      "tags" : "hidden"
     },
     {
       "name": "Twitch",
-      "value": "jonathan_mcc"
+      "value": "jonathan_mcc",
+      "tags" : "hidden"
     }
   ],
   "Skills": [
@@ -75,7 +77,8 @@
       "points": [
         "Developed key systems in Blokus, Mattel branded title nominated in the Canadian Videogame Awards for 'Best Game Design' and 'Best Social or Casual Game.'",
         "Experience integrating a multitude of analytics, ad systems, and backends, including Google Analytics, Game Analytics, Flurry, Mopub, and Playhaven.",
-        "Spent time working with external QA team to bridge company's knowledge gaps between developer and QA workflows."
+        "Spent time working with external QA team to bridge company's knowledge gaps between developer and QA workflows.",
+        "Intergrated ads, in-app purchases, analytics, and handled product releases of legacy client apps."
       ]
     }
   ],
@@ -93,49 +96,52 @@
       "name": "brainCloud",
       "description": "Backend for games, apps and things.",
       "roles": "Test Automation Engineer. Customer Success Specialist. Full-stack Developer.",
-      "technology": "C++, C#, Ruby, Java, JavaScript, Selenium, XUnit, ObjC, Swift, Unreal, Unity, Intercom, Jenkins, WordPress."
+      "technology": "C++, C#, Ruby, Java, JavaScript, Selenium, XUnit, ObjC, Swift, Unreal, Unity, JetBrains Suite, Intercom, Jenkins, WordPress."
     },
     {
       "date": "2016 - 2017",
       "name": "Nortec",
       "description": "Web portal for buying and managing humidifiers.",
       "roles": "Test Automation Engineer. CI Engineer.",
-      "technology": "Java, Selenium, Jenkins, Groovy, bitBucket, starTeam, Jira."
+      "technology": "Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, starTeam, Jira."
     },
     {
       "date": "2015",
       "name": "TELUS Network Experience",
       "description": "Android app for recording customer network feedback.",
       "roles": "Android Developer.",
-      "technology": "Java."
+      "technology": "Java, Android Studio."
     },
     {
       "date": "2015",
       "name": "Go Forward",
       "description": "Android and iOS for helping students who are attending Algonquin College.",
       "roles": "Mobile Developer.",
-      "technology": "Java, ObjC."
+      "technology": "Java, ObjC, Xcode, Android Studio.",
+      "tags": "hidden"
     },
     {
       "date": "2013 - 2014",
       "name": "Blokus",
       "description": "Branded mobile game on iOS.",
       "roles": "Game Developer.",
-      "technology": "ObjC, C++, Cocos2d-x, Jira, Git."
+      "technology": "ObjC, C++, Xcode, Cocos2d-x, Jira, Git."
     },
     {
       "date": "2013",
       "name": "Magmic Daily Sudoku",
       "description": "iOS Sudoku title.",
       "roles": "Ad Intergration.",
-      "technology": "ObjC, C++, Cocos2d-x, Jira, Git."
+      "technology": "ObjC, C++, Cocos2d-x, Jira, Git.",
+      "tags" : "hidden"
     },
     {
       "date": "2013",
       "name": "Paper Desk",
       "description": "iOS document writing program.",
       "roles": "Ad Intergration. Product Release.",
-      "technology": "ObjC, C++."
+      "technology": "ObjC, C++.",
+      "tags": "hidden"
     },
     {
       "date": "2013",
@@ -150,7 +156,7 @@
       "description": "Original iOS side scroller title.",
       "roles": "Game Developer. Level Designer.",
       "technology": "ObjC, C++, Cocos2d-x, Jira, Git.",
-      "tags" : ["hidden"]
+      "tags": "hidden"
     },
     {
       "date": "2012",
@@ -158,6 +164,31 @@
       "description": "Original iOS word and dress up game.",
       "roles": "Game Developer. Concept Designer.",
       "technology": "ObjC, C++, Cocos2d-x, Jira, Git."
+    }
+  ],
+  "sideProjects": [
+    {
+      "date": "2020",
+      "name": "POEHideoutGround",
+      "description": "3rd party design tool for a popular video game title.",
+      "roles": "Web Developer",
+      "technology": "C#, Blazor, NeoVim",
+      "tags": "hidden"
+    },
+    {
+      "date": "2020",
+      "name": "Portfolio Website",
+      "description": "Standard developer showcase and blog website.",
+      "roles": "Web Developer",
+      "technology": "C#, Blazor, NeoVim",
+      "tags": "hidden"
+    },
+    {
+      "date": "2020",
+      "name": "Data Admin",
+      "description": "Dashboard for managing personal data.",
+      "roles": "Web Developer",
+      "technology": "C#, Blazor, NeoVim"
     }
   ]
 }
