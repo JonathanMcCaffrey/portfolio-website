@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace Website.Components.MarkdownContent
 {
-    public class MarkdownContentBase : ComponentBase
+    public partial class MarkdownContent : ComponentBase
     {
         [Inject]
         protected HttpClient Http { get; set; }
