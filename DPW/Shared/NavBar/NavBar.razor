@@ -1,0 +1,35 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+@if(NavData == null) 
+{
+  <p>Loading...</p>
+}
+else 
+{
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto" style="width: 100%;">
+      @{foreach(var section in NavData.Sections) {        
+        <li class="nav-item">
+            <a class="nav-link" href=@section.Href>@section.Name</a>
+        </li>
+
+      }}
+
+      <li style="margin-left:auto;" />
+
+    @{foreach(var socialMedia in NavData.SocialMedia) {
+        <li class="nav-item">
+            <a class="nav-link" href=@socialMedia.Href><span class="iconify" data-icon=@socialMedia.Icon aria-hidden="true"></span></a>
+        </li>
+      }}
+
+      <button type="button" class=@((string)(ToggleTheme ? $"btn btn-light" : "btn btn-dark"))>
+          @((string)(ToggleTheme ? $"Light" : "Dark"))
+      </button>
+      
+    </ul>
+  </div>
+}
+</nav>

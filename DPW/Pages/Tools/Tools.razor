@@ -1,0 +1,25 @@
+﻿@page "/tools"
+@using DPW.Pages.Tools.SubTools
+
+<DPW.Components.MarkdownContent.MarkdownContent FileName="tools" />
+
+@if(ToolsData == null) {
+  <p>Loading...</p>
+} 
+else {
+
+<div style="display: grid; grid-gap: 32px; grid-template-columns: auto auto auto">
+@foreach (var item in ToolsData.Tools)
+{
+<div class="card" style="width: 18rem;">
+  <img src=@item.ImageFullPath() class="card-img-top" alt="POEHideoutGround website preview image">
+  <div class="card-body">
+    <h5 class="card-title">@item.Name</h5>
+    <p class="card-text">@item.Blurb</p>
+    <a href=@item.MarkdownLink() class="btn btn-primary">Learn More</a>
+  </div>
+</div>
+}
+
+</div>
+}
