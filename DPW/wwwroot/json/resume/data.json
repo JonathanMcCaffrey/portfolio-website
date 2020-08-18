@@ -43,6 +43,7 @@
   "Skills": [
     "React",
     "HTML, CSS",
+    "C#, .NET",
     "JS, TypeScript",
     "Agile, Scrum",
     "Jira",
@@ -50,6 +51,7 @@
     "Selenium",
     "Jenkins",
     "REST, APIs",
+    "MySQL",
     "PC, Mac, Mobile",
     "Documentation",
     "Regex"
@@ -77,7 +79,7 @@
       "points": [
         "Developed key systems in Blokus, Mattel branded title nominated in the Canadian Videogame Awards for 'Best Game Design' and 'Best Social or Casual Game.'",
         "Experience integrating a multitude of analytics, ad systems, and backends, including Google Analytics, Game Analytics, Flurry, Mopub, and Playhaven.",
-        "Spent time working with external QA team to bridge the company's knowledge gaps between developer and QA workflows.",
+        "Spent time working with the external QA team to bridge the company's knowledge gaps between the developer and QA workflows.",
         "Integrated ads, in-app purchases, analytics, and handled product releases of legacy client apps."
       ]
     }
@@ -89,7 +91,7 @@
       "name": "TaleSpin",
       "description": "Web app and portal for VR training services.",
       "roles": "Web Developer",
-      "technology": "JavaScript, TypeScript, React, Material UI."
+      "technology": "JavaScript, TypeScript, React, Material UI, Loopback."
     },
     {
       "date": "2016 - 2020",
@@ -103,7 +105,7 @@
       "name": "Nortec",
       "description": "Web portal for buying and managing humidifiers.",
       "roles": "Test Automation Engineer. CI Engineer.",
-      "technology": "Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, starTeam, Jira."
+      "technology": "Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, starTeam, Jira, MySQL."
     },
     {
       "date": "2015",
@@ -172,7 +174,7 @@
       "name": "POEHideoutGround",
       "description": "3rd party design tool for a popular video game title.",
       "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim",
+      "technology": "C#, Blazor, NeoVim.",
       "tags": "hidden"
     },
     {
@@ -180,7 +182,7 @@
       "name": "Portfolio Website",
       "description": "Standard developer showcase and blog website.",
       "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim",
+      "technology": "C#, Blazor, NeoVim.",
       "tags": "hidden"
     },
     {
@@ -188,7 +190,7 @@
       "name": "Data Admin",
       "description": "Dashboard for managing personal data.",
       "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim"
+      "technology": "C#, Blazor, NeoVim, Twitch."
     }
   ]
 }
