@@ -6,7 +6,6 @@ using Microsoft.Extensions.DependencyInjection;
 using BlazorStrap;
 using BlazorStyled;
 
-
 namespace DPW
 {
     public class Program

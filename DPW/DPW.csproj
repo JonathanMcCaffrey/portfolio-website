@@ -5,14 +5,15 @@
     <RazorLangVersion>3.0</RazorLangVersion>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Website' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview3.20168.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
-    <PackageReference Include="Markdig" Version="0.20.0" />
-    <PackageReference Include="BlazorStrap" Version="1.3.2" />
+    <PackageReference Include="Markdig" Version="0.22.0" />
+    <PackageReference Include="BlazorStrap" Version="1.3.3" />
     <PackageReference Include="BlazorStyled" Version="3.0.0" />
   </ItemGroup>
 

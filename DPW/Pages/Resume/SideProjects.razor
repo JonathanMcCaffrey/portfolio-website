@@ -1,0 +1,70 @@
+﻿
+@if (isEmpty)
+{
+}
+else
+{
+    <DPW.Pages.Resume.Section>
+
+        <DPW.Pages.Resume.SectionTitle>
+            Side Projects
+
+        </DPW.Pages.Resume.SectionTitle>
+
+        <div style="display:grid;grid-template-columns: auto; grid-gap:10px;">
+            @foreach (var project in @ResumeData.SideProjects)
+            {
+                @if (@project.Tags == null || @project.Tags?.Contains("hidden") == false)
+                {
+                    <DPW.Pages.Resume.Block>
+                        <div style="display:grid;grid-template-columns:80% 20%;">
+                            <DPW.Pages.Resume.Bold>
+                                @project.Roles
+                            </DPW.Pages.Resume.Bold>
+                            <div>
+                                @project.Date
+                            </div>
+                        </div>
+
+                        <DPW.Pages.Resume.Text>
+                            @project.Name, @project.Description
+                        </DPW.Pages.Resume.Text>
+                        <DPW.Pages.Resume.Text>
+                            Technology: @project.Technology
+                        </DPW.Pages.Resume.Text>
+                    </DPW.Pages.Resume.Block>
+                }
+            }
+
+        </div>
+    </DPW.Pages.Resume.Section>
+
+}
+
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; } = null;
+
+    private bool isEmpty = true;
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+
+        await base.SetParametersAsync(parameters);
+
+        if (ResumeData != null)
+        {
+            foreach (var project in ResumeData.SideProjects)
+            {
+                if (project.Tags == null || project.Tags?.Contains("hidden") == false)
+                {
+                  
+                    isEmpty = false;
+                    break;
+                }
+            }
+
+        }
+    }
+
+}

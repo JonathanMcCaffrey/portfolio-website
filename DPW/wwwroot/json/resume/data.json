@@ -190,7 +190,8 @@
       "name": "Data Admin",
       "description": "Dashboard for managing personal data.",
       "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim, Twitch."
+      "technology": "C#, Blazor, NeoVim, Twitch.",
+      "tags": "hidden"
     }
   ]
 }
