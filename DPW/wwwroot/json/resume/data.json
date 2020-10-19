@@ -45,6 +45,7 @@
     "HTML, CSS",
     "C#, .NET",
     "JS, TypeScript",
+    "Node.js",
     "Agile, Scrum",
     "Jira",
     "Unit Tests",
@@ -65,9 +66,10 @@
       "role": "Full Stack Developer",
       "points": [
         "Worked on a portal and mobile facing web app for a SaaS project written in React.js",
-        "Maintained brainCloud’s unit tests, examples, and libraries in Java, ObjC, C++, C#, and JS. Wrote scripts to generate API content to reduce hours spent documenting.",
+        "Eliminated routine project hours spent documenting by creating a Node.js tool in TypeScript that generated the API doc contents.",
         "Created brainCloud’s Command Line tool in Node.js and other test tools, for developers and QA to test and stress test API and server features.",
-        "Wrote documentation, tutorials, and offer guidance to bring new co-workers up to speed on the BaaS environment. Maintained support systems for customer success.",
+        "Maintained customer success and brainCloud’s unit tests, examples, and libraries in Java, ObjC, C++, C#, JS, Unity, and Unreal.",
+        "Wrote documentation, tutorials, and offer guidance to bring new co-workers up to speed on the BaaS environment.",
         "Maintained and wrote Jenkins Pipeline in Groovy, for improved test reporting and team CI.",
         "Developed Test Automation for brainCloud and Nortec/Condair Help websites in Java, to reduce manual testing time spent on an agile team."
       ]
@@ -84,7 +86,7 @@
       ]
     }
   ],
-  "education": ["Game Development at Algonquin College, 2012"],
+  "education": [ "Game Development at Algonquin College, 2012" ],
   "projects": [
     {
       "date": "2019 - 2020",
@@ -98,14 +100,14 @@
       "name": "brainCloud",
       "description": "Backend for games, apps, and things.",
       "roles": "Test Automation Engineer. Customer Success Specialist. Full-stack Developer.",
-      "technology": "C++, C#, Ruby, Java, JavaScript, Selenium, XUnit, ObjC, Swift, Unreal, Unity, JetBrains Suite, Intercom, Jenkins, WordPress."
+      "technology": "AWS, React, Node.js, C++, C#, Ruby, Java, JavaScript, TypeScript, JetBrains Suite, Intercom, Jenkins, WordPress."
     },
     {
       "date": "2016 - 2017",
       "name": "Nortec",
       "description": "Web portal for buying and managing humidifiers.",
       "roles": "Test Automation Engineer. CI Engineer.",
-      "technology": "Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, starTeam, Jira, MySQL."
+      "technology": "Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, StarTeam, Jira, MySQL."
     },
     {
       "date": "2015",
@@ -141,7 +143,7 @@
       "date": "2013",
       "name": "Paper Desk",
       "description": "iOS document writing program.",
-      "roles": "Ad Intergration. Product Release.",
+      "roles": "Ad Integration. Product Release.",
       "technology": "ObjC, C++.",
       "tags": "hidden"
     },

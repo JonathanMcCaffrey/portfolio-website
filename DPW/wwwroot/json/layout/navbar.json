@@ -1,17 +1,46 @@
-
 {
-  "brandTitle" : "Jonathan McCaffrey",
-  "sections" : [
-    { "name" : "About", "href" : ""},
-    { "name" : "Contact", "href" : "contact"},
-    { "name" : "Resume", "href" : "resume"},
-    { "name" : "Tools", "href" : "tools"},
-    { "name" : "Tutorials", "href" : "tutorials"},
-    { "name" : "Work", "href" : "about"}
+  "brandTitle": "Jonathan McCaffrey",
+  "sections": [
+    {
+      "name": "About",
+      "href": ""
+    },
+    {
+      "name": "Contact",
+      "href": "contact"
+    },
+    {
+      "name": "Resume",
+      "href": "resume"
+    },
+    {
+      "name": "Tools",
+      "href": "tools"
+    },
+    {
+      "name": "Tutorials",
+      "href": "tutorials"
+    },
+    {
+      "name": "Work",
+      "href": "about"
+    }
   ],
-  "socialMedia" : [
-    { "name" : "Twitch", "icon" : "bx:bxl-twitch", "href" : "https://www.twitch.tv/jonathan_mcc"},
-    { "name" : "LinkedIn", "icon" : "ant-design:linkedin-filled", "href" : "https://www.linkedin.com/in/jonmcc/"},
-    { "name" : "GitHub", "icon" : "ant-design:github-filled", "href" : "https://www.github.com/JonathanMcCaffrey/"}
+  "socialMedia": [
+    {
+      "name": "Twitch",
+      "icon": "bx:bxl-twitch",
+      "href": "https://www.twitch.tv/jonathan_mcc"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "ant-design:linkedin-filled",
+      "href": "https://www.linkedin.com/in/jonmcc/"
+    },
+    {
+      "name": "GitHub",
+      "icon": "ant-design:github-filled",
+      "href": "https://www.github.com/JonathanMcCaffrey/"
+    }
   ]
 }
