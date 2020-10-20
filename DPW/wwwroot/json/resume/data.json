@@ -62,12 +62,13 @@
     {
       "date": "2015 - 2020",
       "location": "bitHeads, Tech shop with a focus on cloud-based technology",
-      "role": "Full Stack Developer",
+      "role": "Full-Stack Developer",
       "points": [
         "Worked on a portal and mobile facing web app for a SaaS project written in React.js",
         "Eliminated routine project hours spent documenting by creating a Node.js tool in TypeScript that generated the API doc contents.",
         "Created brainCloud’s Command Line tool in Node.js and other test tools, for developers and QA to test and stress test API and server features.",
         "Maintained customer success and brainCloud’s unit tests, examples, and libraries in Java, ObjC, C++, C#, JS, Unity, and Unreal.",
+        "Searched brainCloud BaaS code for bugs and marked actionable Jira tasks for required teams.",
         "Wrote documentation, tutorials, and offer guidance to bring new co-workers up to speed on the BaaS environment.",
         "Maintained and wrote Jenkins Pipeline in Groovy, for improved test reporting and team CI.",
         "Developed Test Automation for brainCloud and Nortec/Condair Help websites in Java, to reduce manual testing time spent on an agile team."
@@ -85,21 +86,21 @@
       ]
     }
   ],
-  "education": [ "Game Development at Algonquin College, 2012" ],
+  "education": ["Game Development at Algonquin College, 2012"],
   "projects": [
     {
       "date": "2019 - 2020",
       "name": "TaleSpin",
       "description": "Web app and portal for VR training services.",
       "roles": "Web Developer",
-      "technology": "JavaScript, TypeScript, React, Material UI, Loopback."
+      "technology": "JavaScript, TypeScript, React, Material UI, REST, Loopback, BaaS (brainCloud.)"
     },
     {
       "date": "2016 - 2020",
       "name": "brainCloud",
       "description": "Backend for games, apps, and things.",
-      "roles": "Test Automation Engineer. Customer Success Specialist. Full-stack Developer.",
-      "technology": "AWS, React, Node.js, C++, C#, Ruby, Java, JavaScript, TypeScript, JetBrains Suite, Intercom, Jenkins, WordPress."
+      "roles": "Test Automation Engineer. Full-stack Developer.",
+      "technology": "AWS, React, Node.js, C++, C#, MongoDB, Redis, REST, Ruby, Java, JavaScript, TypeScript, Jenkins, WordPress."
     },
     {
       "date": "2016 - 2017",
