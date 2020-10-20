@@ -41,15 +41,15 @@
     }
   ],
   "Skills": [
+    "C#, .NET",
+    "Blazor",
     "React",
     "HTML, CSS",
-    "C#, .NET",
     "JS, TypeScript",
-    "Node.js",
     "Agile, Scrum",
     "Jira",
     "Unit Tests",
-    "Selenium",
+    "Test Automation",
     "Jenkins",
     "REST, APIs",
     "MySQL",
@@ -57,8 +57,7 @@
     "Documentation",
     "Regex"
   ],
-
-  "Summary": "In the industry since 2012, while playing a pivotal role in all aspects of the software stack, from prototype to release, and improving applications with patches based on customer feedback and data in production.",
+  "Summary": "In the industry since 2012, while playing a pivotal role in all aspects of the software stack, from prototype to release, and improving applications with patches based on customer feedback and data in production. Looking to focus more on the C# .NET tech stack.",
   "Experience": [
     {
       "date": "2015 - 2020",
@@ -79,7 +78,7 @@
       "location": "Smoke Labs, Tech startup with a focus on mobile games",
       "role": "Mobile Game Developer",
       "points": [
-        "Developed key systems in Blokus, Mattel branded title nominated in the Canadian Videogame Awards for 'Best Game Design' and 'Best Social or Casual Game.'",
+        "Developed key systems in Blokus, Mattel branded title nominated in the Canadian Video Game Awards for 'Best Game Design' and 'Best Social or Casual Game.'",
         "Experience integrating a multitude of analytics, ad systems, and backends, including Google Analytics, Game Analytics, Flurry, Mopub, and Playhaven.",
         "Spent time working with the external QA team to bridge the company's knowledge gaps between the developer and QA workflows.",
         "Integrated ads, in-app purchases, analytics, and handled product releases of legacy client apps."

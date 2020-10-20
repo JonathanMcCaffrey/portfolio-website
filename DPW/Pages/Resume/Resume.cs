@@ -7,11 +7,9 @@ namespace DPW.Pages.Resume
 {
     public partial class Resume : ComponentBase
     {
+        private Data.Resume.Resume ResumeData {get;set;}
 
-        private Data.Resume.Resume ResumeData {get;set;} 
-
-        [Inject]
-        protected HttpClient Http { get; set; }
+        [Inject] private HttpClient Http { get; set; }
 
         protected override async Task OnInitializedAsync()
         {

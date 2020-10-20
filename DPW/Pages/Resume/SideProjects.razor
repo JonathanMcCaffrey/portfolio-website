@@ -1,70 +1,61 @@
-﻿
-@if (isEmpty)
+﻿@if (_isEmpty)
 {
+    return;
 }
 else
 {
-    <DPW.Pages.Resume.Section>
+    <Section>
 
-        <DPW.Pages.Resume.SectionTitle>
+        <SectionTitle>
             Side Projects
-
-        </DPW.Pages.Resume.SectionTitle>
+        </SectionTitle>
 
         <div style="display:grid;grid-template-columns: auto; grid-gap:10px;">
             @foreach (var project in @ResumeData.SideProjects)
             {
                 @if (@project.Tags == null || @project.Tags?.Contains("hidden") == false)
                 {
-                    <DPW.Pages.Resume.Block>
+                    <Block>
                         <div style="display:grid;grid-template-columns:80% 20%;">
-                            <DPW.Pages.Resume.Bold>
+                            <Bold>
                                 @project.Roles
-                            </DPW.Pages.Resume.Bold>
+                            </Bold>
                             <div>
                                 @project.Date
                             </div>
                         </div>
 
-                        <DPW.Pages.Resume.Text>
+                        <Text>
                             @project.Name, @project.Description
-                        </DPW.Pages.Resume.Text>
-                        <DPW.Pages.Resume.Text>
+                        </Text>
+                        <Text>
                             Technology: @project.Technology
-                        </DPW.Pages.Resume.Text>
-                    </DPW.Pages.Resume.Block>
+                        </Text>
+                    </Block>
                 }
             }
 
         </div>
-    </DPW.Pages.Resume.Section>
-
+    </Section>
 }
 
 @code {
     [Parameter]
-    public Data.Resume.Resume ResumeData { get; set; } = null;
+    public Data.Resume.Resume ResumeData { get; set; }
 
-    private bool isEmpty = true;
+    private bool _isEmpty = true;
 
     public override async Task SetParametersAsync(ParameterView parameters)
     {
-
         await base.SetParametersAsync(parameters);
 
         if (ResumeData != null)
         {
-            foreach (var project in ResumeData.SideProjects)
+            foreach (var project in ResumeData.SideProjects.Where(project => project.Tags == null || project.Tags?.Contains("hidden") == false))
             {
-                if (project.Tags == null || project.Tags?.Contains("hidden") == false)
-                {
-                  
-                    isEmpty = false;
-                    break;
-                }
+                _isEmpty = false;
+                break;
             }
-
         }
     }
-
 }

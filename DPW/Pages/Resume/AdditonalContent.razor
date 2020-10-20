@@ -1,0 +1,36 @@
+<Section>
+    <SectionTitle>
+        Work Projects
+    </SectionTitle>
+    <div style="display:grid;grid-template-columns: auto auto; grid-gap:10px;">
+        @foreach (var project in @ResumeData.Projects)
+        {
+            @if (@project.Tags == null || @project.Tags?.Contains("hidden") == false)
+            {
+                <Block>
+                    <div style="display:grid;grid-template-columns:80% 20%;">
+                        <Bold>
+                            @project.Roles
+                        </Bold>
+                        <div>
+                            @project.Date
+                        </div>
+                    </div>
+
+                    <Text>
+                        @project.Name, @project.Description
+                    </Text>
+                    <Text>
+                        Technology: @project.Technology
+                    </Text>
+                </Block>
+            }
+        }
+        <SideProjects ResumeData="@ResumeData"/>
+    </div>
+</Section>
+
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; }
+}

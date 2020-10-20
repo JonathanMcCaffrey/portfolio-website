@@ -20,12 +20,21 @@
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="Components\MarkdownContent\" />
-    <Folder Include="wwwroot\data\" />
     <Folder Include="wwwroot\markdown\" />
     <Folder Include="wwwroot\markdown\about\" />
     <Folder Include="wwwroot\json\resume\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Components\ThemeSwitcher.razor" />
+    <Content Remove="wwwroot\data\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="wwwroot\data\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="wwwroot\data\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="wwwroot\data\**" />
   </ItemGroup>
 </Project>

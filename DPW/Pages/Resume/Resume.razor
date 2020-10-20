@@ -1,186 +1,49 @@
 ﻿@page "/resume"
 @layout EmptyLayout
 
+<style>
+    ul {
+        margin-bottom: 0;
+    }
+</style>
+
 @if (ResumeData == null)
 {
     <div>Loading...</div>
 }
 else
 {
-
-    <DPW.Components.Print.Print>
-        <DPW.Components.Print.Page.Page>
-            <div style="display: grid; grid-template-columns: 27% 73%;grid-gap:12px;">
-                <div style="background-color:#F9F9F9; padding: 2px; word-wrap: break-word;">
-                    <DPW.Pages.Resume.Block>
-                        <DPW.Pages.Resume.TitleName>
-                            @ResumeData.Title.Name
-                        </DPW.Pages.Resume.TitleName>
-                        <DPW.Pages.Resume.Title>
-                            @ResumeData.Title.Profession
-                        </DPW.Pages.Resume.Title>
-                    </DPW.Pages.Resume.Block>
-                    <DPW.Pages.Resume.Section>
-                        <DPW.Pages.Resume.SectionTitle>
-                            Personal Info
-                        </DPW.Pages.Resume.SectionTitle>
-                        <DPW.Pages.Resume.Block>
-
-                            @foreach (var personInfo in ResumeData.PersonalInfo)
-                            {
-                                @if (personInfo.Tags == null || personInfo.Tags.Contains("hidden") == false)
-                                {
-                                    <DPW.Pages.Resume.Bold>
-                                        @personInfo.Name
-                                    </DPW.Pages.Resume.Bold>
-                                    <DPW.Pages.Resume.Text>
-                                        @personInfo.Value
-                                    </DPW.Pages.Resume.Text>
-                                }
-                            }
-                        </DPW.Pages.Resume.Block>
-
-                    </DPW.Pages.Resume.Section>
-
-
-                    <br />
-
-                    <DPW.Pages.Resume.Section>
-
-                        <DPW.Pages.Resume.SectionTitle>
-                            Skills
-                        </DPW.Pages.Resume.SectionTitle>
-
-                        <DPW.Pages.Resume.Block>
-                            <div style="display:grid; grid-template-colums:1frl">
-                                @foreach (var skill in ResumeData.Skills)
-                                {
-                                    <DPW.Pages.Resume.Bold>
-                                        @skill
-                                    </DPW.Pages.Resume.Bold>
-                                }
-                            </div>
-                        </DPW.Pages.Resume.Block>
-                    </DPW.Pages.Resume.Section>
+    <Print>
+        <Page>
+            <div style="display: grid;
+                        grid-template-columns: 27% 73%;
+                        grid-template-rows: auto auto auto;
+                        grid-gap: 12px;">
+                <div style="grid-column-start: 1;
+                            grid-column-end: 4;
+                            grid-row-start: 1;
+                            grid-row-end: 2;">
+                    <ResumeHead ResumeData="@ResumeData"/>
                 </div>
-
-                <div>
-                    <DPW.Pages.Resume.Section>
-                        <DPW.Pages.Resume.SectionTitle>
-                            Summary
-                        </DPW.Pages.Resume.SectionTitle>
-
-                        <DPW.Pages.Resume.Block>
-
-                            @ResumeData.Summary
-                        </DPW.Pages.Resume.Block>
-                    </DPW.Pages.Resume.Section>
-
-                    <br />
-
-                    <DPW.Pages.Resume.Section>
-                        <DPW.Pages.Resume.SectionTitle>
-                            Work Experience
-                        </DPW.Pages.Resume.SectionTitle>
-
-                        <DPW.Pages.Resume.Block>
-                            @foreach (var experience in @ResumeData.Experience)
-                            {
-                                <div style="display:grid;grid-template-columns:80% 20%;grid-gap:2px;">
-                                    <div>
-                                        <DPW.Pages.Resume.Bold>
-                                            @experience.Role
-                                        </DPW.Pages.Resume.Bold>
-                                        <DPW.Pages.Resume.Text>
-                                            @experience.Location
-                                        </DPW.Pages.Resume.Text>
-                                    </div>
-                                    <div>@experience.Date</div>
-                                </div>
-                                <ul>
-                                    @foreach (var point in experience.Points)
-                                    {
-                                        <li>
-
-                                            <DPW.Pages.Resume.Text>
-                                                @point
-
-                                            </DPW.Pages.Resume.Text>
-                                        </li>
-                                    }
-                                </ul>
-                            }
-                        </DPW.Pages.Resume.Block>
-                    </DPW.Pages.Resume.Section>
-
-                    <DPW.Pages.Resume.Section>
-                        <DPW.Pages.Resume.SectionTitle>
-                            Education
-                        </DPW.Pages.Resume.SectionTitle>
-
-                        <DPW.Pages.Resume.Block>
-                            @foreach (var education in @ResumeData.Education)
-                            {
-                                <DPW.Pages.Resume.Text>
-                                    @education
-                                </DPW.Pages.Resume.Text>
-                            }
-                        </DPW.Pages.Resume.Block>
-                    </DPW.Pages.Resume.Section>
-
+                <div style="grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 2;
+                            grid-row-end: 3;">
+                    <SideInformation ResumeData="@ResumeData"/>
+                </div>
+                <div style="grid-column-start: 2;
+                            grid-column-end: 3;
+                            grid-row-start: 2;
+                            grid-row-end: 3;">
+                    <SummaryContent ResumeData="@ResumeData"/>
+                </div>
+                <div style="grid-column-start: 1;
+                            grid-column-end: 4;
+                            grid-row-start: 3;
+                            grid-row-end: 4;">
+                    <AdditonalContent ResumeData="@ResumeData"/>
                 </div>
             </div>
-            <br />
-            <DPW.Pages.Resume.Section>
-
-                <DPW.Pages.Resume.SectionTitle>
-                    Work Projects
-                </DPW.Pages.Resume.SectionTitle>
-
-                <div style="display:grid;grid-template-columns: auto auto; grid-gap:10px;">
-                    @foreach (var project in @ResumeData.Projects)
-                    {
-                        @if (@project.Tags == null || @project.Tags?.Contains("hidden") == false)
-                        {
-                            <DPW.Pages.Resume.Block>
-                                <div style="display:grid;grid-template-columns:80% 20%;">
-                                    <DPW.Pages.Resume.Bold>
-                                        @project.Roles
-                                    </DPW.Pages.Resume.Bold>
-                                    <div>
-                                        @project.Date
-                                    </div>
-                                </div>
-
-                                <DPW.Pages.Resume.Text>
-                                    @project.Name, @project.Description
-                                </DPW.Pages.Resume.Text>
-                                <DPW.Pages.Resume.Text>
-                                    Technology: @project.Technology
-                                </DPW.Pages.Resume.Text>
-                            </DPW.Pages.Resume.Block>
-
-                        }
-
-                    }
-
-                    <DPW.Pages.Resume.SideProjects ResumeData=@ResumeData />
-
-                </div>
-            </DPW.Pages.Resume.Section>
-
-        </DPW.Components.Print.Page.Page>
-
-    </DPW.Components.Print.Print>
+        </Page>
+    </Print>
 }
-
-
-
-
-
-
-
-
-
-
-
