@@ -1,4 +1,4 @@
-﻿@page "/resume"
+﻿@page "/resumealt"
 @layout EmptyLayout
 
 <style>
@@ -18,9 +18,9 @@ else
             <div style="width: 100%;
                         height: 100%;
                         display: grid;
-                        grid-template-columns: 27% auto;
-                        grid-template-rows: auto auto auto;
-                        grid-gap: 12px;">
+                        grid-template-columns: 67% auto;
+                        grid-template-rows: auto auto auto auto;
+                        grid-gap: 10px;">
                 <div style="grid-column-start: 1;
                             grid-column-end: 3;
                             grid-row-start: 1;
@@ -28,32 +28,27 @@ else
                     <ResumeHead ResumeData="@ResumeData"/>
                 </div>
                 <div style="grid-column-start: 1;
-                            grid-column-end: 2;
-                            grid-row-start: 2;
-                            grid-row-end: 3;">
-                    <PersonalInfo ResumeData="@ResumeData"/>
-                    <Skills ResumeData="@ResumeData"/>
+                                            grid-column-end: 2;
+                                            grid-row-start: 2;
+                                            grid-row-end: 3;">
+                    <Summary ResumeData="@ResumeData"/>
+                    <WorkExperience ResumeData="@ResumeData"/>
+                    <WorkProjects ResumeData="@ResumeData"/>
                 </div>
                 <div style="grid-column-start: 2;
                             grid-column-end: 3;
                             grid-row-start: 2;
                             grid-row-end: 3;">
-                    
-                    <Summary ResumeData="@ResumeData"/>
-                    <WorkExperience ResumeData="@ResumeData"/>
+                    <PersonalInfo ResumeData="@ResumeData"/>
                     <Education ResumeData="@ResumeData"/>
-                                        
-                </div>
-                <div style="grid-column-start: 1;
-                            grid-column-end: 3;
-                            grid-row-start: 3;
-                            grid-row-end: 4;">
-                    <WorkProjects ResumeData="@ResumeData"/>
+                    <References ResumeData="@ResumeData"></References>
+                    
                 </div>
             </div>
         </Page>
     </Print>
 }
+
 
 @code {
     private Data.Resume.Resume ResumeData {get;set;}

@@ -8,6 +8,7 @@ namespace DPW.Data.Resume
         public Title Title { get; set; }
         public List<PersonalInfo> PersonalInfo { get; set; }
         public List<Experience> Experience { get; set; }
+        public List<Reference> References { get; set; }
         public List<string> Skills { get; set; }
         public string Summary { get; set; }
         public List<string> Education { get; set; }

@@ -1,0 +1,36 @@
+<Section>
+    <SectionTitle>
+        Work Experience
+    </SectionTitle>
+    @foreach (var experience in @ResumeData.Experience)
+    {
+        <Block>
+            <div style="display:grid;grid-template-columns:80% 20%;grid-gap:2px;">
+                <div>
+                    <Bold>
+                        @experience.Role
+                    </Bold>
+                    <Text>
+                        @experience.Location
+                    </Text>
+                </div>
+                <div>@experience.Date</div>
+            </div>
+            <ul>
+                @foreach (var point in experience.Points)
+                {
+                    <li>
+                        <Text>
+                            @point
+                        </Text>
+                    </li>
+                }
+            </ul>
+        </Block>
+    }
+</Section>
+  
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; }
+}

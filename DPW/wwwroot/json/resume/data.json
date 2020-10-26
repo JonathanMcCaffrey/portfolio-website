@@ -1,46 +1,48 @@
 ﻿{
-  "title": {
-    "name": "Jonathan McCaffrey",
-    "profession": "Software Developer"
+  "title":{
+    "name":"Jonathan McCaffrey",
+    "profession":"Software Developer"
   },
-  "personalInfo": [
+  "personalInfo":[
     {
-      "name": "Address",
-      "value": "2045 Carling"
+      "name":"Address",
+      "value":"2045 Carling"
     },
     {
-      "name": "Phone",
-      "value": "613-277-8353"
+      "name":"Phone",
+      "value":"613-277-8353"
     },
     {
-      "name": "Email",
-      "value": "jonmcc.0723@gmail.com"
+      "name":"Email",
+      "value":"jonmcc.0723@gmail.com"
     },
     {
-      "name": "WWW",
-      "value": "jonathanmc.dev"
+      "name":"WWW",
+      "value":"jonathanmc.dev",
+      "tags":"hidden"
     },
     {
-      "name": "LinkedIn",
-      "value": "jonmcc"
-    },
-
-    {
-      "name": "GitHub",
-      "value": "JonathanMcCaffrey"
+      "name":"LinkedIn",
+      "value":"jonmcc",
+      "tags":"hidden"
     },
     {
-      "name": "Facebook",
-      "value": "jonathan.mccaffrey.50",
-      "tags": "hidden"
+      "name":"GitHub",
+      "value":"JonathanMcCaffrey",
+      "tags":"hidden"
     },
     {
-      "name": "Twitch",
-      "value": "jonathan_mcc",
-      "tags": "hidden"
+      "name":"Facebook",
+      "value":"jonathan.mccaffrey.50",
+      "tags":"hidden"
+    },
+    {
+      "name":"Twitch",
+      "value":"jonathan_mcc",
+      "tags":"hidden"
     }
   ],
-  "Skills": [
+  "Skills":[
     "C#, .NET",
     "Blazor",
     "React",
@@ -57,13 +59,13 @@
     "Documentation",
     "Regex"
   ],
-  "Summary": "In the industry since 2012, while playing a pivotal role in all aspects of the software stack, from prototype to release, and improving applications with patches based on customer feedback and data in production. Looking to focus more on the C# .NET tech stack.",
-  "Experience": [
+  "Summary":"In the industry since 2012, while playing a pivotal role in all aspects of the software stack, from prototype to release, and improving applications with patches based on customer feedback and data in production. Looking to focus more on the C# .NET tech stack.",
+  "Experience":[
     {
-      "date": "2015 - 2020",
-      "location": "bitHeads, Tech shop with a focus on cloud-based technology",
-      "role": "Full-Stack Developer",
-      "points": [
+      "date":"2015 - 2020",
+      "location":"bitHeads, Tech shop with a focus on cloud-based technology",
+      "role":"Full-Stack Developer",
+      "points":[
         "Worked on a portal and mobile facing web app for a SaaS project written in React.js",
         "Eliminated routine project hours spent documenting by creating a Node.js tool in TypeScript that generated the API doc contents.",
         "Created brainCloud’s Command Line tool in Node.js and other test tools, for developers and QA to test and stress test API and server features.",
@@ -75,10 +77,10 @@
       ]
     },
     {
-      "date": "2012 - 2015",
-      "location": "Smoke Labs, Tech startup with a focus on mobile games",
-      "role": "Mobile Game Developer",
-      "points": [
+      "date":"2012 - 2015",
+      "location":"Smoke Labs, Tech startup with a focus on mobile games",
+      "role":"Mobile Game Developer",
+      "points":[
         "Developed key systems in Blokus, Mattel branded title nominated in the Canadian Video Game Awards for 'Best Game Design' and 'Best Social or Casual Game.'",
         "Experience integrating a multitude of analytics, ad systems, and backends, including Google Analytics, Game Analytics, Flurry, Mopub, and Playhaven.",
         "Spent time working with the external QA team to bridge the company's knowledge gaps between the developer and QA workflows.",
@@ -86,114 +88,140 @@
       ]
     }
   ],
-  "education": ["Game Development at Algonquin College, 2012"],
-  "projects": [
+  "education":[
+    "Game Development at Algonquin College, 2012"
+  ],
+  "projects":[
     {
-      "date": "2019 - 2020",
-      "name": "TaleSpin",
-      "description": "Web app and portal for VR training services.",
-      "roles": "Web Developer",
-      "technology": "JavaScript, TypeScript, React, Material UI, REST, Loopback, BaaS (brainCloud.)"
+      "date":"2019 - 2020",
+      "name":"TaleSpin",
+      "description":"Web app and portal for VR training services.",
+      "roles":"Web Developer",
+      "technology":"JavaScript, TypeScript, React, Material UI, REST, Loopback, BaaS (brainCloud.)"
     },
     {
-      "date": "2016 - 2020",
-      "name": "brainCloud",
-      "description": "Backend for games, apps, and things.",
-      "roles": "Test Automation Engineer. Full-stack Developer.",
-      "technology": "AWS, React, Node.js, C++, C#, MongoDB, Redis, REST, Ruby, Java, JavaScript, TypeScript, Jenkins, WordPress."
+      "date":"2016 - 2020",
+      "name":"brainCloud",
+      "description":"Backend for games, apps, and things.",
+      "roles":"Test Automation Engineer. Full-stack Developer.",
+      "technology":"AWS, React, Node.js, C++, C#, MongoDB, Redis, REST, Ruby, Java, JavaScript, TypeScript, Jenkins, WordPress."
     },
     {
-      "date": "2016 - 2017",
-      "name": "Nortec",
-      "description": "Web portal for buying and managing humidifiers.",
-      "roles": "Test Automation Engineer. CI Engineer.",
-      "technology": "Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, StarTeam, Jira, MySQL."
+      "date":"2016 - 2017",
+      "name":"Nortec",
+      "description":"Web portal for buying and managing humidifiers.",
+      "roles":"Test Automation Engineer. CI Engineer.",
+      "technology":"Java, Selenium, VSCode, Jenkins, Groovy, bitBucket, StarTeam, Jira, MySQL."
     },
     {
-      "date": "2015",
-      "name": "TELUS Network Experience",
-      "description": "Android app for recording customer network feedback.",
-      "roles": "Android Developer.",
-      "technology": "Java, Android Studio."
+      "date":"2015",
+      "name":"TELUS Network Experience",
+      "description":"Android app for recording customer network feedback.",
+      "roles":"Android Developer.",
+      "technology":"Java, Android Studio."
     },
     {
-      "date": "2015",
-      "name": "Go Forward",
-      "description": "Android and iOS for helping students who are attending Algonquin College.",
-      "roles": "Mobile Developer.",
-      "technology": "Java, ObjC, Xcode, Android Studio.",
-      "tags": "hidden"
+      "date":"2015",
+      "name":"Go Forward",
+      "description":"Android and iOS for helping students who are attending Algonquin College.",
+      "roles":"Mobile Developer.",
+      "technology":"Java, ObjC, Xcode, Android Studio.",
+      "tags":"hidden"
     },
     {
-      "date": "2013 - 2014",
-      "name": "Blokus",
-      "description": "Branded mobile game on iOS.",
-      "roles": "Game Developer.",
-      "technology": "ObjC, C++, Xcode, Cocos2d-x, Jira, Git."
+      "date":"2013 - 2014",
+      "name":"Blokus",
+      "description":"Branded mobile game on iOS.",
+      "roles":"Game Developer.",
+      "technology":"ObjC, C++, Xcode, Cocos2d-x, Jira, Git."
     },
     {
-      "date": "2013",
-      "name": "Magmic Daily Sudoku",
-      "description": "iOS Sudoku title.",
-      "roles": "Ad Intergration.",
-      "technology": "ObjC, C++, Cocos2d-x, Jira, Git.",
-      "tags": "hidden"
+      "date":"2013",
+      "name":"Magmic Daily Sudoku",
+      "description":"iOS Sudoku title.",
+      "roles":"Ad Intergration.",
+      "technology":"ObjC, C++, Cocos2d-x, Jira, Git.",
+      "tags":"hidden"
     },
     {
-      "date": "2013",
-      "name": "Paper Desk",
-      "description": "iOS document writing program.",
-      "roles": "Ad Integration. Product Release.",
-      "technology": "ObjC, C++.",
-      "tags": "hidden"
+      "date":"2013",
+      "name":"Paper Desk",
+      "description":"iOS document writing program.",
+      "roles":"Ad Integration. Product Release.",
+      "technology":"ObjC, C++.",
+      "tags":"hidden"
     },
     {
-      "date": "2013",
-      "name": "Rubik’s Cube",
-      "description": "Branded iOS title.",
-      "roles": "IAP Integration.",
-      "technology": "ObjC, C++."
+      "date":"2013",
+      "name":"Rubik’s Cube",
+      "description":"Branded iOS title.",
+      "roles":"IAP Integration.",
+      "technology":"ObjC, C++.",
+      "tags":"hidden"
     },
     {
-      "date": "2012",
-      "name": "Arty’s Quest for Nuts",
-      "description": "Original iOS side scroller title.",
-      "roles": "Game Developer. Level Designer.",
-      "technology": "ObjC, C++, Cocos2d-x, Jira, Git.",
-      "tags": "hidden"
+      "date":"2012",
+      "name":"Arty’s Quest for Nuts",
+      "description":"Original iOS side scroller title.",
+      "roles":"Game Developer. Level Designer.",
+      "technology":"ObjC, C++, Cocos2d-x, Jira, Git.",
+      "tags":"hidden"
     },
     {
-      "date": "2012",
-      "name": "Fridge Frenzy",
-      "description": "Original iOS word and dress up game.",
-      "roles": "Game Developer. Concept Designer.",
-      "technology": "ObjC, C++, Cocos2d-x, Jira, Git."
+      "date":"2012",
+      "name":"Fridge Frenzy",
+      "description":"Original iOS word and dress up game.",
+      "roles":"Game Developer. Concept Designer.",
+      "technology":"ObjC, C++, Cocos2d-x, Jira, Git."
     }
   ],
-  "sideProjects": [
+  "sideProjects":[
     {
-      "date": "2020",
-      "name": "POEHideoutGround",
-      "description": "3rd party design tool for a popular video game title.",
-      "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim.",
-      "tags": "hidden"
+      "date":"2020",
+      "name":"POEHideoutGround",
+      "description":"3rd party design tool for a popular video game title.",
+      "roles":"Web Developer",
+      "technology":"C#, Blazor, NeoVim.",
+      "tags":"hidden"
     },
     {
-      "date": "2020",
-      "name": "Portfolio Website",
-      "description": "Standard developer showcase and blog website.",
-      "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim.",
-      "tags": "hidden"
+      "date":"2020",
+      "name":"Portfolio Website",
+      "description":"Standard developer showcase and blog website.",
+      "roles":"Web Developer",
+      "technology":"C#, Blazor, NeoVim.",
+      "tags":"hidden"
     },
     {
-      "date": "2020",
-      "name": "Data Admin",
-      "description": "Dashboard for managing personal data.",
-      "roles": "Web Developer",
-      "technology": "C#, Blazor, NeoVim, Twitch.",
-      "tags": "hidden"
+      "date":"2020",
+      "name":"Data Admin",
+      "description":"Dashboard for managing personal data.",
+      "roles":"Web Developer",
+      "technology":"C#, Blazor, NeoVim, Twitch.",
+      "tags":"hidden"
+    }
+  ],
+  "references":[
+    {
+      "name":"Jason Liang",
+      "quote":"Jonathan is a very details oriented and thorough software development leader/developer. He understands the development cycle from end to end and creates credible plans to deliver to customers on time. As a team leader, he always is able to guide us on the right track during the developing circle and solve the tech issues we met rapidly. He is very opened to share his ideas. He works in concert with his peers/team to provide well thought out, often novel approaches to complex problems then define and implement actions to provide winning solutions.",
+      "title":"Customer Success Specialist at bitHeads.",
+      "relation":"Jonathan was senior to Jason but didn’t manage directly.",
+      "date" : "2020"
+    },
+    {
+      "name":"Kyle McInnes",
+      "quote":"Jon is an all around great guy to work with. He's a competent developer, easy to get along with, and is able to take on a variety of tasks with passion. He was often the last one to leave the office and I was always impressed with his dedication.",
+      "title":"Manager at Smoke Labs.",
+      "relation":"Kyle was senior to Jonathan but didn’t manage directly.",
+      "date" : "2014"
+    },
+    {
+      "name":"Anthony Bongers",
+      "quote":"Over the course of three years at Smoke Labs I have worked on many projects with Jonathan, spanning from tools to games. Jonathan has consistently demonstrated a strong work ethic, and passion for the projects at hand. I would recommend Jonathan for any company looking for a talented and hard-working developer.",
+      "title":"Game Developer at Smoke Labs.",
+      "relation":"Jonathan worked with Anthony in the same group.",
+      "date" : "2014"
     }
   ]
 }

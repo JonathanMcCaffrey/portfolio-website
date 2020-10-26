@@ -1,0 +1,19 @@
+<Section>
+    <SectionTitle>
+        Education
+    </SectionTitle>
+
+    <Block>
+        @foreach (var education in @ResumeData.Education)
+        {
+            <Text>
+                @education
+            </Text>
+        }
+    </Block>
+</Section>
+  
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; }
+}

@@ -1,0 +1,22 @@
+<Section>
+    <SectionTitle>
+        Skills
+    </SectionTitle>
+
+    <Block>
+        <div style="display:grid; grid-template-columns:1fr; grid-gap:2px;">
+            @foreach (var skill in ResumeData.Skills)
+            {
+                <Bold>
+                    @skill
+                </Bold>
+            }
+        </div>
+    </Block>
+</Section>
+
+
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; }
+}

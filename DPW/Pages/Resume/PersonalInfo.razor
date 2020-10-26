@@ -1,0 +1,31 @@
+<Section>
+    <SectionTitle>
+        Personal Info
+    </SectionTitle>
+
+    <Block>
+        @foreach (var personInfo in ResumeData.PersonalInfo)
+        {
+            @if (personInfo.Tags == null || personInfo.Tags.Contains("hidden") == false)
+            {
+                <div>
+                    <Bold>
+                        @personInfo.Name
+                    </Bold>
+                    <Text>
+                        @personInfo.Value
+                    </Text>
+                </div>
+        
+            }
+        }
+                        
+    </Block>
+</Section>
+
+
+
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; }
+}

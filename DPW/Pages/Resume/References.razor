@@ -1,0 +1,23 @@
+<Section>
+    <SectionTitle>
+        References
+    </SectionTitle>
+    @foreach (var reference in @ResumeData.References)
+    {
+        <Block>
+            <div style="display:grid;grid-template-columns:80% 20%;grid-gap:2px;">
+                <div>
+                    <b>@reference.Name, </b>@reference.Title
+                </div>
+                <div>@reference.Date</div>
+            </div>
+            <div><i>"@reference.Quote"</i></div>
+            <div>(@reference.Relation)</div>
+        </Block>
+    }
+</Section>
+  
+@code {
+    [Parameter]
+    public Data.Resume.Resume ResumeData { get; set; }
+}

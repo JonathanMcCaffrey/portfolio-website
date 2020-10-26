@@ -18,16 +18,19 @@
     },
     {
       "name": "WWW",
-      "value": "jonathanmc.dev"
+      "value": "jonathanmc.dev",
+      "tags": "hidden"
     },
     {
       "name": "LinkedIn",
-      "value": "jonmcc"
+      "value": "jonmcc",
+      "tags": "hidden"
     },
 
     {
       "name": "GitHub",
-      "value": "JonathanMcCaffrey"
+      "value": "JonathanMcCaffrey",
+      "tags": "hidden"
     },
     {
       "name": "Facebook",
@@ -150,7 +153,8 @@
       "name": "Rubik’s Cube",
       "description": "Branded iOS title.",
       "roles": "IAP Integration.",
-      "technology": "ObjC, C++."
+      "technology": "ObjC, C++.",
+      "tags": "hidden"
     },
     {
       "date": "2012",

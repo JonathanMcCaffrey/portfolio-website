@@ -2,7 +2,7 @@
     <SectionTitle>
         Work Projects
     </SectionTitle>
-    <div style="display:grid;grid-template-columns: auto auto; grid-gap:10px;">
+    <div style="display:grid;grid-template-columns: auto auto; grid-gap:6px;">
         @foreach (var project in @ResumeData.Projects)
         {
             @if (@project.Tags == null || @project.Tags?.Contains("hidden") == false)
